@@ -12,19 +12,7 @@ function SidebarMenu() {
 
                 <aside
                     id="sidebar"
-                    className="
-                    fixed
-                    top-0
-                    right-0
-                    h-full
-                    w-64
-                    bg-base-100
-                    border-l
-                    border-base-content/20
-                    shadow-lg
-                    transform
-                    translate-x-full
-                    transition-transform
+                    className=" fixed top-0 right-0 h-full w-64 bg-base-100 border-l border-base-content/20 shadow-lg transform translate-x-full transition-transform
                     duration-300
                     sm:translate-x-0
                     sm:static

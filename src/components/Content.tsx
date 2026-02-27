@@ -36,7 +36,7 @@ function Content() {
                     <img
                         src="https://images.unsplash.com/photo-1518781780548-4d410d94ec75?q=80&w=1740&auto=format&fit=crop"
                         alt="Random Unsplash"
-                        className="w-full h-[auto] object-cover rounded-lg opacity-90"
+                        className="w-full h-[auto] object-cover rounded-lg opacity-10"
                     />
 
                     <div className="absolute inset-0 bg-black/40 rounded-lg"></div>
