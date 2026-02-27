@@ -1,103 +1,83 @@
-import {
-    Menu,
-    Home,
-    User,
-    MessageSquare,
-    ShoppingBag,
-    LogIn,
-    LogOut,
-} from "lucide-react";
+import { Home, User, MessageSquare, ShoppingBag, LogIn, LogOut } from "lucide-react";
 
 function SidebarMenu() {
     return (
         <>
-            <div className="flex align-items left">
-                {/* Mobile Toggle */}
+            <div className="fixed top-27 right-0 h-full z-50 bg-transparent backdrop-blur-sm border-l border-gray-200 shadow-lg">
                 <button
                     type="button"
-                    className="btn btn-text max-sm:btn-square sm:hidden"
-                    aria-haspopup="dialog"
-                    aria-expanded="false"
-                    aria-controls="collapsible-mini-sidebar"
-                    data-overlay="#collapsible-mini-sidebar"
+                    className="fixed top-4 right-4 z-50 sm:hidden btn btn-square btn-ghost"
                 >
-                    <Menu size={20} />
                 </button>
 
                 <aside
-                    id="collapsible-mini-sidebar"
-                    className="overlay [--auto-close:sm] overlay-minified:w-17 sm:shadow-none overlay-open:translate-x-0 drawer drawer-start hidden w-66 sm:absolute sm:z-0 sm:flex sm:translate-x-0 border-e border-base-content/20"
-                    role="dialog"
-                    tabIndex={1}
+                    id="sidebar"
+                    className="
+                    fixed
+                    top-0
+                    right-0
+                    h-full
+                    w-64
+                    bg-base-100
+                    border-l
+                    border-base-content/20
+                    shadow-lg
+                    transform
+                    translate-x-full
+                    transition-transform
+                    duration-300
+                    sm:translate-x-0
+                    sm:static
+                    sm:block
+                "
                 >
-                    <div className="drawer-header overlay-minified:px-3.75 py-2 w-full flex items-center justify-between gap-3">
-                        <h3 className="drawer-title text-xl font-semibold overlay-minified:hidden">
-                            FlyonUI
-                        </h3>
-
-                        <div className="hidden sm:block">
-                            <button
-                                type="button"
-                                className="btn btn-circle btn-text"
-                                aria-haspopup="dialog"
-                                aria-expanded="false"
-                                aria-controls="collapsible-mini-sidebar"
-                                aria-label="Minify navigation"
-                                data-overlay-minifier="#collapsible-mini-sidebar"
-                            >
-                                <Menu size={20} />
-                                <span className="sr-only">Navigation Toggle</span>
-                            </button>
-                        </div>
+                    <div className="p-4 border-b border-base-content/10">
+                        <h3 className="text-xl font-semibold">FlyonUI</h3>
                     </div>
 
-                    <div className="drawer-body px-2 pt-4">
-                        <ul className="menu p-0 space-y-1">
-                            <li>
-                                <a href="#" className="flex items-center gap-3">
-                                    <Home size={20} />
-                                    <span className="overlay-minified:hidden">Home</span>
-                                </a>
-                            </li>
+                    <ul className="menu p-4 space-y-2">
+                        <li>
+                            <a className="flex items-center gap-3">
+                                <Home size={20} />
+                                Home
+                            </a>
+                        </li>
 
-                            <li>
-                                <a href="#" className="flex items-center gap-3">
-                                    <User size={20} />
-                                    <span className="overlay-minified:hidden">Account</span>
-                                </a>
-                            </li>
+                        <li>
+                            <a className="flex items-center gap-3">
+                                <User size={20} />
+                                Account
+                            </a>
+                        </li>
 
-                            <li>
-                                <a href="#" className="flex items-center gap-3">
-                                    <MessageSquare size={20} />
-                                    <span className="overlay-minified:hidden">
-                                        Notifications
-                                    </span>
-                                </a>
-                            </li>
+                        <li>
+                            <a className="flex items-center gap-3">
+                                <MessageSquare size={20} />
+                                Notifications
+                            </a>
+                        </li>
 
-                            <li>
-                                <a href="#" className="flex items-center gap-3">
-                                    <ShoppingBag size={20} />
-                                    <span className="overlay-minified:hidden">Product</span>
-                                </a>
-                            </li>
+                        <li>
+                            <a className="flex items-center gap-3">
+                                <ShoppingBag size={20} />
+                                Product
+                            </a>
+                        </li>
 
-                            <li>
-                                <a href="#" className="flex items-center gap-3">
-                                    <LogIn size={20} />
-                                    <span className="overlay-minified:hidden">Sign In</span>
-                                </a>
-                            </li>
+                        <li>
+                            <a className="flex items-center gap-3">
+                                <LogIn size={20} />
+                                Sign In
+                            </a>
+                        </li>
 
-                            <li>
-                                <a href="#" className="flex items-center gap-3">
-                                    <LogOut size={20} />
-                                    <span className="overlay-minified:hidden">Sign Out</span>
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
+                        <li>
+                            <a className="flex items-center gap-3">
+                                <LogOut size={20} />
+                                Sign Out
+                            </a>
+                        </li>
+                    </ul>
                 </aside>
             </div>
         </>
