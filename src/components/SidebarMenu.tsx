@@ -3,10 +3,6 @@ import {
     Home,
     User,
     MessageSquare,
-    LayoutGrid,
-    ChevronDown,
-    Mail,
-    Calendar,
     ShoppingBag,
     LogIn,
     LogOut,
@@ -78,42 +74,6 @@ function SidebarMenu() {
                                         Notifications
                                     </span>
                                 </a>
-                            </li>
-
-                            <li className="dropdown relative">
-                                <button
-                                    id="dropdown-default"
-                                    type="button"
-                                    className="dropdown-toggle flex items-center gap-3 w-full"
-                                    aria-haspopup="menu"
-                                    aria-expanded="false"
-                                >
-                                    <LayoutGrid size={20} />
-                                    <span className="overlay-minified:hidden">Apps</span>
-                                    <ChevronDown
-                                        size={16}
-                                        className="overlay-minified:hidden ml-auto"
-                                    />
-                                </button>
-
-                                <ul
-                                    className="dropdown-menu mt-0 hidden min-w-60"
-                                    role="menu"
-                                    aria-labelledby="dropdown-default"
-                                >
-                                    <li>
-                                        <a href="#" className="flex items-center gap-3">
-                                            <Mail size={20} />
-                                            Email
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="#" className="flex items-center gap-3">
-                                            <Calendar size={20} />
-                                            Calendar
-                                        </a>
-                                    </li>
-                                </ul>
                             </li>
 
                             <li>

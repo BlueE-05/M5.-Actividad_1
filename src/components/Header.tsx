@@ -11,10 +11,10 @@ function Header() {
                 </a>
 
                 <span className="ml-15 mr-auto hidden sm:flex">
-                    <PrimaryButton title="Home" />
-                    <PrimaryButton title="About" />
-                    <PrimaryButton title="Blog" />
-                    <PrimaryButton title="Contact" />
+                    <PrimaryButton Title="Home" textColor="white" />
+                    <PrimaryButton Title="About" textColor="white" />
+                    <PrimaryButton Title="Blog" textColor="white" />
+                    <PrimaryButton Title="Contact" textColor="white" />
                 </span>
 
                 <span className="relative inline-flex sm:ml-auto sm:mt-0 mt-4 w-full max-w-xs">
